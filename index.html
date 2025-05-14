@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PLN Icon Plus - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #ffffff;
+      color: #004d80;
+    }
+
+    header {
+      background: #f2fbff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    header img {
+      height: 40px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #0078bf;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #004d80;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #e0f7ff, #ffffff);
+      padding: 80px 40px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      color: #005a9c;
+    }
+
+    .hero button {
+      background: #0078bf;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .hero button:hover {
+      background: #005a9c;
+    }
+
+    .section {
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    .news-preview, .about-snippet {
+      max-width: 1000px;
+      margin: auto;
+      margin-bottom: 40px;
+    }
+
+    .news-preview img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .footer {
+      background: #e0f7ff;
+      color: #004d80;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      header, .section, .hero {
+        padding: 20px;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      nav a {
+        margin: 0 10px;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="img/iconplus.png" alt="PLN Icon Plus Logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="news.html">News</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="maps.html">Maps</a>
+      <a href="application.html">Application</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Welcome to PLN Icon Plus</h1>
+    <p>PLN Icon Plus (dulu bernama Indonesia Comnets Plus) adalah 
+        anak perusahaan PT PLN yang bergerak di bidang teknologi informasi 
+        dan komunikasi (TIK) serta transisi energi. 
+        Mereka fokus pada penyediaan layanan telekomunikasi, konektivitas, 
+        managed service, solusi digital, dan transisi energi. 
+        PLN Icon Plus memanfaatkan infrastruktur PLN, seperti Right of Way (RoW) dan tiang PLN, 
+        untuk membangun jaringan fiber optik yang luas di Indonesia. </p>
+    <button onclick="location.href='news.html'">Read Latest News</button>
+  </div>
+
+  <div class="section news-preview">
+    <h2>Latest News</h2>
+    <img src="img/g5.jpg" alt="PLN News Preview">
+    <p><strong>PLN Icon Plus Siap Mendukung Penyediaan Jaringan Handal ke 9 lokasi Pembangkit Listrik Tenaga Mikro Hidro (PLTMH)</strong></p>
+    <p>Untuk menyambungkan seluruh PLTMH tersebut akan dilakukan penarikan Full kabel fiber optic dengan penuh perhitungan</p>
+  </div>
+
+  <div class="section about-snippet">
+    <h2>About Us</h2>
+    <p>PT PLN Icon Plus merupakan Entitas Anak PT PLN (Persero) . 
+        PLN Icon Plus Dibangun pada tahun 2000 sebagai bagian dari PT PLN (Persero) 
+        untuk memenuhi kebutuhan jaringan telekomunikasi PLN. 
+        Awalnya, perusahaan ini fokus pada operasi Network Operation Center di 
+        Gandul, Cinere, untuk mendukung kelistrikan PLN. 
+        Seiring berkembangnya kebutuhan akan jaringan telekomunikasi yang lebih luas dan andal, 
+        PLN Icon Plus mulai menyalurkan kapasitas jaringan serat optik PLN ke masyarakat, 
+        khususnya untuk perusahaan dan lembaga yang membutuhkan konektivitas luas.</p>
+    <button onclick="location.href='about.html'">Learn More</button>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 PLN Icon Plus. All rights reserved. <br>CR: Helen Kezia.NS-035</p>
+  </div>
+</body>
+
+</html>

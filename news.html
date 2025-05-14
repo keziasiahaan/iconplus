@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News - PLN Icon Plus</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: #ffffff;
+      color: #004d80;
+    }
+
+    header {
+      background: #f2fbff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #0078bf;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #004d80;
+    }
+
+    .news-section {
+      padding: 40px;
+    }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      justify-items: center;
+    }
+
+    .news-card {
+      width: 100%;
+      max-width: 220px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .news-card img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .news-card-content {
+      padding: 15px;
+    }
+
+    .news-card-content h4 {
+      font-size: 0.95rem;
+      margin: 8px 0 4px;
+      color: #002e4d;
+    }
+
+    .news-card-content p {
+      font-size: 0.85rem;
+      margin: 0;
+      color: #005a9c;
+    }
+
+    .news-card-content a {
+      display: inline-block;
+      margin-top: 10px;
+      font-weight: 600;
+      color: #006fbf;
+      text-decoration: none;
+    }
+
+    .footer {
+      background: #e0f7ff;
+      color: #004d80;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="img/iconplus.png" alt="PLN Icon Plus Logo" style="height:40px">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="news.html">News</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="maps.html">Maps</a>
+      <a href="application.html">Application</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <section class="news-section">
+    <h2 style="text-align: center; margin-bottom: 30px;">Berita Terbaru</h2>
+    <div class="news-grid">
+      <div class="news-card">
+        <img src="img/news1.jpeg" alt="News 1">
+        <div class="news-card-content">
+          <p>9 Mei 2025</p>
+          <h4>Inovasi AI di Sektor Ketenagalistrikan</h4>
+          <a href="news-detail1.html">Selengkapnya</a>
+        </div>
+      </div>
+      <div class="news-card">
+        <img src="img/news2.jpeg" alt="News 2">
+        <div class="news-card-content">
+          <p>25 April 2025</p>
+          <h4>PLN Icon Plus Kompak Bersama Mitra Majukan Energi Terbarukan</h4>
+          <a href="news-detail2.html">Selengkapnya</a>
+        </div>
+      </div>
+      <div class="news-card">
+        <img src="img/news3.jpeg" alt="News 3">
+        <div class="news-card-content">
+          <p>24 April 2025</p>
+          <h4>Langkah Para Kartini Menuju Masa Depan Berkelanjutan</h4>
+          <a href="news-detail3.html">Selengkapnya</a>
+        </div>
+      </div>
+      <div class="news-card">
+        <img src="img/news4.jpg" alt="News 4">
+        <div class="news-card-content">
+          <p>24 April 2025</p>
+          <h4>Pemkab Beltim Terima Perangkat Internet Satelit dari ICON+</h4>
+          <a href="news-detail4.html">Selengkapnya</a>
+        </div>
+      </div>
+      <div class="news-card">
+        <img src="img/news5.jpeg" alt="News 5">
+        <div class="news-card-content">
+          <p>10 April 2025</p>
+          <h4>Halal Bihalal PLN Icon Plus Dukung UMKM</h4>
+          <a href="news-detail5.html">Selengkapnya</a>
+        </div>
+      </div>
+      <div class="news-card">
+        <img src="img/news6.jpeg" alt="News 6">
+        <div class="news-card-content">
+          <p>21 Maret 2025</p>
+          <h4>Kolaborasi UMKM, PLN Icon Plus Gelar Berkah Ramadhan</h4>
+          <a href="news-detail6.html">Selengkapnya</a>
+        </div>
+      </div>
+      <div class="news-card">
+        <img src="img/news7.jpeg" alt="News 7">
+        <div class="news-card-content">
+          <p>20 Maret 2025</p>
+          <h4>PLN Icon Plus Lakukan Pemeliharaan Kabel di Samosir</h4>
+          <a href="news-detail7.html">Selengkapnya</a>
+        </div>
+      </div>
+      <div class="news-card">
+        <img src="img/news8.jpeg" alt="News 8">
+        <div class="news-card-content">
+          <p>20 Maret 2025</p>
+          <h4>Dukungan SPKLU PLN Menjelang Mudik 2025</h4>
+          <a href="news-detail8.html">Selengkapnya</a>
+        </div>
+      </div>
+      <div class="news-card">
+        <img src="img/news9.jpeg" alt="News 9">
+        <div class="news-card-content">
+          <p>19 Maret 2025</p>
+          <h4>PLN Icon Plus Bahas Efisiensi Energi dengan APKASI</h4>
+          <a href="news-detail9.html">Selengkapnya</a>
+        </div>
+      </div>
+      <div class="news-card">
+        <img src="img/news10.jpeg" alt="News 10">
+        <div class="news-card-content">
+          <p>7 Maret 2025</p>
+          <h4>CC PLN 123 Palembang Siap Meningkatkan Pelayanan kepada Pelanggan</h4>
+          <a href="news-detail10.html">Selengkapnya</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">
+    <p>&copy; 2025 PLN Icon Plus. All rights reserved. <br>CR: Helen Kezia.NS-035</p>
+  </div>
+</body>
+</html>

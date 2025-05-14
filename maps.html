@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lokasi Kami - PLN Icon Plus</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-p7L2rFZUCkMbnA29tpVSa+yb6VGCujLxBZoJ3V+n4dw=" crossorigin=""/>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-color: #ffffff;
+      color: #004d80;
+    }
+    header {
+      background: #f2fbff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #0078bf;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #004d80;
+    }
+    .container {
+      padding: 40px;
+    }
+    .map-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+    .info {
+      flex: 1;
+    }
+    .info h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .info p {
+      margin: 8px 0;
+      line-height: 1.6;
+    }
+    #map {
+      height: 400px;
+      flex: 1;
+      min-width: 300px;
+    }
+    .region-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .region-list h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+    .region-list p {
+      margin: 4px 0;
+    }
+    .footer {
+      background: #e0f7ff;
+      color: #004d80;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+  </style>
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-pkgaHf0WNEqekXX0tM2uRKJ6NvzN2Tt+Vd1Q1qE1aG0=" crossorigin=""></script>
+</head>
+<body>
+  <header>
+    <img src="img/iconplus.png" alt="PLN Icon Plus Logo" style="height:40px">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="news.html">News</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="maps.html">Maps</a>
+      <a href="application.html">Application</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="map-section">
+      <div class="info">
+        <h2>PLN Icon Plus Kantor Pusat</h2>
+        <p>📍 Jamsostek Menara B Jl. Gatot Subroto, RT.6/RW.1, Kuningan Bar., Kec. Mampang Prpt., Kota Jakarta Selatan 12710</p>
+        <p>📞 021-5253019</p>
+        <p>📠 021-5253659</p>
+      </div>
+      <iframe class="map-embed" src="https://maps.google.com/maps?q=Jamsostek%20Menara%20B%20Jakarta&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen loading="lazy"></iframe>
+    </div>
+
+    <div class="region-list">
+      <div>
+        <h3>SBU Regional Sumatera Bagian Utara</h3>
+        <p>📍 Jalan Brigjend Katamso Km. 5,5 No.30, Titi Kuning, MEDAN JOHOR, Kota Medan, Sumatera Utara 20146</p>
+        <p>📞 061–8477983</p>
+        <p>📠 061–8457458</p>
+      </div>
+      <div>
+        <h3>SBU Regional Sumatera Bagian Tengah</h3>
+        <p>📍 Jalan Soekarno Hatta, Komp Griya Satitiri No 4-5 Marpoyan Damai, Pekanbaru</p>
+        <p>📞 0751–810012</p>
+        <p>📠 0751–34656</p>
+      </div>
+      <div>
+        <h3>SBU Regional Sumatera Bagian Selatan</h3>
+        <p>📍 Jl. Demang Lebar Daun No.375 Kec. Bar Ilir. Saya, Kota Palembang</p>
+        <p>📞 0711–363963</p>
+        <p>📠 0711–378718</p>
+      </div>
+      <div>
+        <h3>SBU Regional Bagian Jakarta</h3>
+        <p>📍 Kawasan PLN Cawang Jl. Mayjend Sutoyo No.1, Cililitan, RW.9, Kec. Kramat Jati, Jakarta Timur, DKI Jakarta 13640</p>
+      </div>
+      <div>
+        <h3>SBU Regional Jawa Bagian Barat</h3>
+        <p>📍 Jl. Supratman No.58, Bandung – Jabar 40121</p>
+        <p>📞 022–7200 262</p>
+        <p>📠 022–7203742</p>
+      </div>
+      <div>
+        <h3>SBU Regional Jawa Bagian Tengah</h3>
+        <p>📍 Unit Bisnis Strategis Regional Semarang Jl. Setia Budi No. 96 Srondol Kulon Banyumanik, Semarang 50263</p>
+        <p>📞 024–7620576</p>
+        <p>📠 024-76403482</p>
+      </div>
+      <div>
+        <h3>SBU Regional Jawa Bagian Timur</h3>
+        <p>📍 PLN PIKITRING Jl. Ketintang Baru I No.1-3 Surabaya</p>
+        <p>📞 031–8273399</p>
+        <p>📠 031-8286611</p>
+      </div>
+      <div>
+        <h3>SBU Regional Bali & Nusa Tenggara</h3>
+        <p>📍 Area Perkantoran PT PLN PUSHARLIS Jl. Gunung Mandalawangi No.15 Tegal Harum Denpasar, Bali 80119</p>
+        <p>📞 0361–2093500</p>
+      </div>
+      <div>
+        <h3>SBU Regional Kalimantan</h3>
+        <p>📍 Jl. Jenderal Sudirman No.211 B, RT.52, Klandasan Ilir, Balikpapan Kota, Kalimantan Timur</p>
+        <p>📞 (0542) – 8501777</p>
+      </div>
+      <div>
+        <h3>SBU Regional Sulawesi & Indonesia Bagian Timur</h3>
+        <p>📍 Jl. DR Sam Ratulangi No 134, Makassar 90125</p>
+        <p>📞 0411–8919068</p>
+        <p>📠 0411–8919094</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 PLN Icon Plus. All rights reserved. <br>CR: Helen Kezia.NS-035</p>
+  </div>
